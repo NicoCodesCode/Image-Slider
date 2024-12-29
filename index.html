@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Madero's Albums</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1 class="main header">José Madero's Albums</h1>
+    </header>
+    <main>
+      <section id="image-slider" class="image-slider">
+        <button
+          type="button"
+          id="previous-button"
+          class="previous button"
+          onclick="previous()"
+        >
+          &#10094;
+        </button>
+        <div class="image-container" id="image-container">
+          <img
+            src="img/carmesi.jpg"
+            alt="carmesi"
+            width="600"
+            height="600"
+            class="album carmesi"
+            id="carmesi"
+          />
+          <img
+            src="img/noche.jpg"
+            alt="noche"
+            width="600"
+            height="600"
+            class="album noche hidden"
+            id="noche"
+          />
+          <img
+            src="img/alba.jpg"
+            alt="alba"
+            width="600"
+            height="600"
+            class="album alba hidden"
+            id="alba"
+          />
+          <img
+            src="img/psalmos.jpg"
+            alt="psalmos"
+            width="600"
+            height="600"
+            class="album psalmos hidden"
+            id="psalmos"
+          />
+          <img
+            src="img/giallo.jpg"
+            alt="giallo"
+            width="600"
+            height="600"
+            class="album giallo hidden"
+            id="giallo"
+          />
+          <img
+            src="img/sarajevo.jpg"
+            alt="sarajevo"
+            width="600"
+            height="600"
+            class="album sarajevo hidden"
+            id="sarajevo"
+          />
+        </div>
+        <button
+          type="button"
+          id="next-button"
+          class="next button"
+          onclick="next()"
+        >
+          &#10095;
+        </button>
+      </section>
+      <p id="album-name" class="album-name header">Carmesi</p>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
